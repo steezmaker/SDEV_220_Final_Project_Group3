@@ -1,16 +1,20 @@
-<!-- templates/base.html -->
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>My Personal Blog</title>
+    <title>Chill Vibes Cafe Fan Blog</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 <body>
-<h1>My Personal Blog</h1>
+<h1>Chill Vibes Cafe Fan Blog</h1>
 <a href="{% url "blog_index" %}">Home</a>
 <hr>
 {% block page_title %}{% endblock page_title %}
 {% block page_content %}{% endblock page_content %}
 </body>
+<footer>
+    Copyright &copy; 2024 The Chill Vibes Cafe<br>
+    <a href="">ChillVibesCafe@gmail.com</a>
+</footer>
 </html>
